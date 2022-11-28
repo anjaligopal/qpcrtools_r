@@ -1,0 +1,140 @@
+* Block Type = 96-Well 0.1-mL Block
+* Calibration Background is expired  = No
+* Calibration Background performed on = 09-30-2021
+* Calibration Pure Dye ABY is expired = No
+* Calibration Pure Dye ABY performed on = 09-30-2021
+* Calibration Pure Dye FAM is expired = No
+* Calibration Pure Dye FAM performed on = 09-30-2021
+* Calibration Pure Dye JUN is expired = No
+* Calibration Pure Dye JUN performed on = 09-30-2021
+* Calibration Pure Dye NED is expired = No
+* Calibration Pure Dye NED performed on = 09-30-2021
+* Calibration Pure Dye ROX is expired = No
+* Calibration Pure Dye ROX performed on = 09-30-2021
+* Calibration Pure Dye SYBR is expired = No
+* Calibration Pure Dye SYBR performed on = 09-30-2021
+* Calibration Pure Dye TAMRA is expired = No
+* Calibration Pure Dye TAMRA performed on = 09-30-2021
+* Calibration Pure Dye VIC is expired = No
+* Calibration Pure Dye VIC performed on = 09-30-2021
+* Calibration ROI is expired  = No
+* Calibration ROI performed on = 09-30-2021
+* Calibration Uniformity is expired  = No
+* Calibration Uniformity performed on = 09-30-2021
+* Chemistry = TAQMAN
+* Date Created = 2022-06-28 17:37:12 PM PDT
+* Experiment Barcode = NA
+* Experiment Comment = NA
+* Experiment File Name = D:\Users\Administrator\Documents\NAO\2022-06-28\2022-06-28-C4-D5.eds
+* Experiment Name = 2022-06-28-C4-D5
+* Experiment Run End Time = 2022-06-14 16:03:56 PM PDT
+* Experiment Type = Standard Curve
+* Instrument Name =       272313154
+* Instrument Serial Number = 272313154
+* Instrument Type = QuantStudio™ 3 System
+* Passive Reference = ROX
+* Post-read Stage/Step = 
+* Pre-read Stage/Step = 
+* Quantification Cycle Method = Ct
+* Signal Smoothing On = true
+* Stage/ Cycle where Ct Analysis is performed = Stage2, Step2
+* User Name = NA
+
+[Sample Setup]
+Well	Well Position	Sample Name	Sample Color	Biogroup Name	Biogroup Color	Target Name	Target Color	Task	Reporter	Quencher	Quantity	Comments
+1	A1	Probe 007	"RGB(0,139,69)"			NTC	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+2	A2	Probe 007	"RGB(0,139,69)"			Wastewater Sample 1	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+3	A3	Probe 007	"RGB(0,139,69)"			Wastewater Sample 2	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+4	A4	Probe 007	"RGB(0,139,69)"			Wastewater Sample 3	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+5	A5	Probe 007	"RGB(0,139,69)"			MilliQ Water 1	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+6	A6	Probe 007	"RGB(0,139,69)"			MilliQ Water 2	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+7	A7	Blank	"RGB(0,139,69)"			(No Probe)	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+8	A8											
+9	A9	Probe 007	"RGB(0,139,69)"			NTC	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+10	A10	Probe 007	"RGB(0,139,69)"			Wastewater Sample 1	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+11	A11	Probe 007	"RGB(0,139,69)"			Wastewater Sample 2	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+12	A12	Probe 007	"RGB(0,139,69)"			Wastewater Sample 3	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+13	B1	Probe 007	"RGB(0,139,69)"			MilliQ Water 1	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+14	B2	Probe 007	"RGB(0,139,69)"			MilliQ Water 2	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+15	B3	Blank	"RGB(0,139,69)"			(No Probe)	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+16	B4											
+17	B5	Probe 007	"RGB(0,139,69)"			NTC	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+18	B6	Probe 007	"RGB(0,139,69)"			Wastewater Sample 1	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+19	B7	Probe 007	"RGB(0,139,69)"			Wastewater Sample 2	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+20	B8	Probe 007	"RGB(0,139,69)"			Wastewater Sample 3	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+21	B9	Probe 007	"RGB(0,139,69)"			MilliQ Water 1	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+22	B10	Probe 007	"RGB(0,139,69)"			MilliQ Water 2	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+23	B11	Blank	"RGB(0,139,69)"			(No Probe)	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+24	B12											
+25	C1	Probe 004	"RGB(0,139,69)"			NTC	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+26	C2	Probe 004	"RGB(0,139,69)"			Wastewater Sample 1	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+27	C3	Probe 004	"RGB(0,139,69)"			Wastewater Sample 2	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+28	C4	Probe 004	"RGB(0,139,69)"			Wastewater Sample 3	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+29	C5	Probe 004	"RGB(0,139,69)"			MilliQ Water 1	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+30	C6	Probe 004	"RGB(0,139,69)"			MilliQ Water 2	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+31	C7	Blank	"RGB(0,139,69)"			(No Probe)	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+32	C8											
+33	C9	Probe 004	"RGB(0,139,69)"			NTC	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+34	C10	Probe 004	"RGB(0,139,69)"			Wastewater Sample 1	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+35	C11	Probe 004	"RGB(0,139,69)"			Wastewater Sample 2	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+36	C12	Probe 004	"RGB(0,139,69)"			Wastewater Sample 3	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+37	D1	Probe 004	"RGB(0,139,69)"			MilliQ Water 1	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+38	D2	Probe 004	"RGB(0,139,69)"			MilliQ Water 2	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+39	D3	Blank	"RGB(0,139,69)"			(No Probe)	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+40	D4											
+41	D5	Probe 004	"RGB(0,139,69)"			NTC	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+42	D6	Probe 004	"RGB(0,139,69)"			Wastewater Sample 1	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+43	D7	Probe 004	"RGB(0,139,69)"			Wastewater Sample 2	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+44	D8	Probe 004	"RGB(0,139,69)"			Wastewater Sample 3	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+45	D9	Probe 004	"RGB(0,139,69)"			MilliQ Water 1	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+46	D10	Probe 004	"RGB(0,139,69)"			MilliQ Water 2	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+47	D11	Blank	"RGB(0,139,69)"			(No Probe)	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+48	D12											
+49	E1	Probe 010	"RGB(0,139,69)"			NTC	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+50	E2	Probe 010	"RGB(0,139,69)"			Wastewater Sample 1	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+51	E3	Probe 010	"RGB(0,139,69)"			Wastewater Sample 2	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+52	E4	Probe 010	"RGB(0,139,69)"			Wastewater Sample 3	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+53	E5	Probe 010	"RGB(0,139,69)"			MilliQ Water 1	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+54	E6	Probe 010	"RGB(0,139,69)"			MilliQ Water 2	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+55	E7	Blank	"RGB(0,139,69)"			(No Probe)	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+56	E8											
+57	E9	Probe 010	"RGB(0,139,69)"			NTC	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+58	E10	Probe 010	"RGB(0,139,69)"			Wastewater Sample 1	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+59	E11	Probe 010	"RGB(0,139,69)"			Wastewater Sample 2	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+60	E12	Probe 010	"RGB(0,139,69)"			Wastewater Sample 3	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+61	F1	Probe 010	"RGB(0,139,69)"			MilliQ Water 1	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+62	F2	Probe 010	"RGB(0,139,69)"			MilliQ Water 2	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+63	F3	Blank	"RGB(0,139,69)"			(No Probe)	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+64	F4											
+65	F5	Probe 010	"RGB(0,139,69)"			NTC	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+66	F6	Probe 010	"RGB(0,139,69)"			Wastewater Sample 1	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+67	F7	Probe 010	"RGB(0,139,69)"			Wastewater Sample 2	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+68	F8	Probe 010	"RGB(0,139,69)"			Wastewater Sample 3	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+69	F9	Probe 010	"RGB(0,139,69)"			MilliQ Water 1	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+70	F10	Probe 010	"RGB(0,139,69)"			MilliQ Water 2	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+71	F11	Blank	"RGB(0,139,69)"			(No Probe)	"RGB(0,139,69)"	UNKNOWN	FAM	NFQ-MGB		
+72	F12											
+73	G1											
+74	G2											
+75	G3											
+76	G4											
+77	G5											
+78	G6											
+79	G7											
+80	G8											
+81	G9											
+82	G10											
+83	G11											
+84	G12											
+85	H1											
+86	H2											
+87	H3											
+88	H4											
+89	H5											
+90	H6											
+91	H7											
+92	H8											
+93	H9											
+94	H10											
+95	H11											
+96	H12											

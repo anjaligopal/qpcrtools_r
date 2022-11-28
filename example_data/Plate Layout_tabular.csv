@@ -1,0 +1,97 @@
+Well,Sample,Replicate
+A1,Probe 007,NTC
+A2,Probe 007,Wastewater Sample 1
+A3,Probe 007,Wastewater Sample 2
+A4,Probe 007,Wastewater Sample 3
+A5,Probe 007,MilliQ Water 1
+A6,Probe 007,MilliQ Water 2
+A7,Blank,(No Probe)
+A8,,
+A9,Probe 007,NTC
+A10,Probe 007,Wastewater Sample 1
+A11,Probe 007,Wastewater Sample 2
+A12,Probe 007,Wastewater Sample 3
+B1,Probe 007,MilliQ Water 1
+B2,Probe 007,MilliQ Water 2
+B3,Blank,(No Probe)
+B4,,
+B5,Probe 007,NTC
+B6,Probe 007,Wastewater Sample 1
+B7,Probe 007,Wastewater Sample 2
+B8,Probe 007,Wastewater Sample 3
+B9,Probe 007,MilliQ Water 1
+B10,Probe 007,MilliQ Water 2
+B11,Blank,(No Probe)
+B12,,
+C1,Probe 004,NTC
+C2,Probe 004,Wastewater Sample 1
+C3,Probe 004,Wastewater Sample 2
+C4,Probe 004,Wastewater Sample 3
+C5,Probe 004,MilliQ Water 1
+C6,Probe 004,MilliQ Water 2
+C7,Blank,(No Probe)
+C8,,
+C9,Probe 004,NTC
+C10,Probe 004,Wastewater Sample 1
+C11,Probe 004,Wastewater Sample 2
+C12,Probe 004,Wastewater Sample 3
+D1,Probe 004,MilliQ Water 1
+D2,Probe 004,MilliQ Water 2
+D3,Blank,(No Probe)
+D4,,
+D5,Probe 004,NTC
+D6,Probe 004,Wastewater Sample 1
+D7,Probe 004,Wastewater Sample 2
+D8,Probe 004,Wastewater Sample 3
+D9,Probe 004,MilliQ Water 1
+D10,Probe 004,MilliQ Water 2
+D11,Blank,(No Probe)
+D12,,
+E1,Probe 010,NTC
+E2,Probe 010,Wastewater Sample 1
+E3,Probe 010,Wastewater Sample 2
+E4,Probe 010,Wastewater Sample 3
+E5,Probe 010,MilliQ Water 1
+E6,Probe 010,MilliQ Water 2
+E7,Blank,(No Probe)
+E8,,
+E9,Probe 010,NTC
+E10,Probe 010,Wastewater Sample 1
+E11,Probe 010,Wastewater Sample 2
+E12,Probe 010,Wastewater Sample 3
+F1,Probe 010,MilliQ Water 1
+F2,Probe 010,MilliQ Water 2
+F3,Blank,(No Probe)
+F4,,
+F5,Probe 010,NTC
+F6,Probe 010,Wastewater Sample 1
+F7,Probe 010,Wastewater Sample 2
+F8,Probe 010,Wastewater Sample 3
+F9,Probe 010,MilliQ Water 1
+F10,Probe 010,MilliQ Water 2
+F11,Blank,(No Probe)
+F12,,
+G1,,
+G2,,
+G3,,
+G4,,
+G5,,
+G6,,
+G7,,
+G8,,
+G9,,
+G10,,
+G11,,
+G12,,
+H1,,
+H2,,
+H3,,
+H4,,
+H5,,
+H6,,
+H7,,
+H8,,
+H9,,
+H10,,
+H11,,
+H12,,
