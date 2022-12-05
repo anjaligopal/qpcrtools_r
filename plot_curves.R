@@ -30,9 +30,9 @@ amp_curves <- function(layout, spreadsheet){
     
 }
 
-curve_plot <- function(standard_curve, samples = NULL, replicates = NULL, palette = NULL, colors = NULL, title = NULL){
+curve_plot <- function(standard_curve, samples = NULL, replicates = NULL, palette = NULL, colors = NULL, title = NULL, text_size = 20){
     
-    options(repr.plot.width=20, repr.plot.height=8)
+    options(repr.plot.width=10, repr.plot.height=8)
     
     if (class(samples) == "NULL"){
         stop("Please specify which sample to plot")
@@ -61,6 +61,5 @@ curve_plot <- function(standard_curve, samples = NULL, replicates = NULL, palett
         plots <- plots + ggtitle(title)
     }
 
-    plots <- plots + theme(text = element_text(size = 30))+ geom_line(linewidth = 2) + geom_point()
-    
+    plots <- plots + theme(text = element_text(size = text_size))+ geom_line(linewidth = 2)
 }

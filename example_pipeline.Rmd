@@ -1,0 +1,74 @@
+---
+title: "Plotting qPCR Curves"
+output: html_notebook
+---
+
+This is an example notebook on how to create and plot qPCR curves, using the set of qPCR scripts that Anjali developed [here](https://github.com/anjaligopal/qpcrtools_r). 
+
+Note that this is still in development, and further modifications might be needed.
+
+### Importing Scripts
+
+First, please clone the repo and ensure that the following packages are installed: tidyverse, readxl, ggplot2. Once that's done, we can begin by going to our working directory and importing the scripts.
+
+```{r}
+setwd("/Users/Anjali/NAO/analysis/qpcrtools_r")
+source("plate_setup.R")
+source("plot_curves.R")
+```
+
+### Converting qPCR data into tabular format
+
+The first step is to convert our qPCR data (from the excel spreadsheet) into a tabular format with corresponding sample and replicate names that we can read. We can do this by using the scripts from plate_setup.R.
+
+We first begin by creating a plate layout that can be seen in example_data/Plate Layout.xlsx. This is an excel spreadsheet with a two-line format per well, where the first line corresponds to the broad sample name (e.g., "Probe 007" if we're comparing across different probes) and the second line corresponds to the replicate (e.g., "NTC"). **This will vary across experiments** and setting this up will be a bit of an art. 
+
+For now, let's use example_data/Plate Layout.xlsx to generate a tabular file. 
+
+```{r}
+tabular_file <- import_plate(file="example_data/Plate Layout.xlsx")
+```
+
+Note tha this auto-generates a file called Plate Layout_tabular.csv in example_data. We can also visualize what the tabular file looks like here>
+
+```{r}
+head(tabular_file)
+```
+
+Next, we can call some functions to plot the qPCR data.
+
+First, we'll start with the amp_curves function in plot_curves.R, which takes in the tabular layout file we created in the last step, and the raw qPCR results xls file to generate an object that we can then plot.
+
+```{r}
+init_curve <- amp_curves("example_data/Plate Layout_tabular.csv","example_data/raw data_ 4 Nov 2022_2_point2 TH (007, 004, 010).xls")
+```
+
+The amplification curves object has an attribute called $amplification_data which we can visualize:
+
+```{r}
+head(init_curve$amplification_data)
+```
+
+We can then use the curve_plot function to plot some of the curves. Importantly, we can specify which samples and replicates we want to plot. You cannot leave the sample field blank, because that would plot way too many curves. We can see what samples exist in the following way:
+
+```{r}
+print(unique(init_curve$amplification_data$Sample))
+```
+
+Based on this, let's plot Probe 007.
+
+```{r, fig.width = 10, fig.height = 5}
+test <- curve_plot(init_curve, title="Nov 4 Raw Data Curves", samples = c("Probe 007"))
+test
+```
+
+We can also add custom colors:
+
+```{r, fig.width = 10, fig.height = 5}
+test <- curve_plot(init_curve, title="Nov 4 Raw Data Curves", samples = c("Probe 007"), colors = c("Red","Maroon","black","cyan1","cyan3","cyan4"))
+test
+```
+
+### Things still left to do/to debug:
+- Why the replicates flag isn't working
+- Adding a threshold plot function
