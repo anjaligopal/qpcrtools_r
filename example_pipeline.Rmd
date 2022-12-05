@@ -9,7 +9,7 @@ Note that this is still in development, and further modifications might be neede
 
 ### Importing Scripts
 
-First, please clone the repo and ensure that the following packages are installed: tidyverse, readxl, ggplot2. Once that's done, we can begin by going to our working directory and importing the scripts.
+First, please [clone the repo](https://blogs.sap.com/2019/07/12/how-to-clone-a-github-repository-to-local-mac-computer/) (make sure you have [git installed](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)) and ensure that the following packages are installed: tidyverse, readxl, ggplot2. Once that's done, we can begin by going to our working directory and importing the scripts.
 
 ```{r}
 setwd("/Users/Anjali/NAO/analysis/qpcrtools_r")
