@@ -41,7 +41,7 @@ import_plate <- function(file, save_tabular = TRUE){
     }
         
     # Reading and re-shpaing plate file
-    plate = unlist(plate, use.names = FALSE)
+    plate = unlist(t(plate), use.names = FALSE)
 
     # Splitting plate entries by \n
     # We have to check for entries that are null
@@ -50,10 +50,14 @@ import_plate <- function(file, save_tabular = TRUE){
     replicate_name = list();
     
     for (entry in plate){
-        entry_split = unlist(strsplit(entry,"\r\n"));
+        entry_split = unlist(strsplit(entry,"\n"));
 
         if (length(entry_split) == 1){
-            entry_split = c(entry_split,"")
+            entry_split = unlist(strsplit(entry,"\r\n"));
+
+            if (length(entry_split) == 1){
+                entry_split = c(entry_split,"")
+            }
         }
 
         sample_name = append(sample_name,entry_split[1])
@@ -78,7 +82,7 @@ import_plate <- function(file, save_tabular = TRUE){
         write.csv(plate_tabular,file=tabular_filename, row.names=FALSE, quote=FALSE)
     }
 
-    return(plate_tabular)
+    return(data.frame(plate_tabular))
 }
 
 create_plate <- function(plate_layout, output_file="example_data/plate_layout.txt", 
