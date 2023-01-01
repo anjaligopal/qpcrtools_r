@@ -4,7 +4,7 @@ library(tidyverse)
 library(tools)
 library(readxl)
 
-import_plate <- function(file, save_tabular = TRUE){
+import_plate <- function(file, save_tabular = TRUE, sheet = 1){
     
     # Imports a plate either from a csv, xls, or xlsx
     # file and converts into a tabular plate format.
@@ -20,7 +20,7 @@ import_plate <- function(file, save_tabular = TRUE){
     
     # Reading file depending on whether it's excel or csv
     if (file_extension == "xls" | file_extension == "xlsx"){
-        plate <- read_excel(file)
+        plate <- read_excel(file, sheet = sheet)
     } else {
         plate <- read.csv(file)
     }
@@ -41,30 +41,33 @@ import_plate <- function(file, save_tabular = TRUE){
     }
         
     # Reading and re-shpaing plate file
-    plate = unlist(t(plate), use.names = FALSE)
+    plate <- unlist(t(plate), use.names = FALSE)
 
     # Splitting plate entries by \n
     # We have to check for entries that are null
     
-    sample_name = list();
-    replicate_name = list();
-    
-    for (entry in plate){
-        entry_split = unlist(strsplit(entry,"\n"));
+    sample_name <- list();
+    replicate_name <- list();
 
-        if (length(entry_split) == 1){
-            entry_split = unlist(strsplit(entry,"\r\n"));
+    for (entry in plate) {
 
-            if (length(entry_split) == 1){
-                entry_split = c(entry_split,"")
-            }
+        # Using grep to search for a variety of delimiters
+        if (length(grep("\r\n|\n|\r|\r\n", entry)) > 0) {
+            entry <- gsub("\r\n|\n|\r|\r\n", "\n", entry)
+
+        } else {
+            entry <- paste(entry, "", sep = "\n")
         }
+ 
+        # Splitting according to delimeter
+        entry_split <- unlist(strsplit(entry, "\n"))
 
-        sample_name = append(sample_name,entry_split[1])
-        replicate_name = append(replicate_name,entry_split[2])
+        # Assigning entries
+        sample_name <- append(sample_name, entry_split[1])
+        replicate_name <- append(replicate_name, entry_split[2])
 
     }
-        
+            
     # Concatenating rows
     plate_tabular <- data.frame(cbind(plate_indices,sample_name,replicate_name))
     colnames(plate_tabular) <- c('Well','Sample','Replicate')
@@ -78,7 +81,7 @@ import_plate <- function(file, save_tabular = TRUE){
     if (save_tabular == TRUE){
         
         # Getting the filename
-        tabular_filename <- paste(file_path_sans_ext(file),"_tabular.csv",sep="")
+        tabular_filename <- paste(file_path_sans_ext(file),"_",sheet,"_tabular.csv",sep="")
         write.csv(plate_tabular,file=tabular_filename, row.names=FALSE, quote=FALSE)
     }
 
